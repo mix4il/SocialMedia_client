@@ -1,0 +1,16 @@
+.input{
+    padding: 20px;
+    border: none;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 12px;
+    color: #757575;
+}
+
+.input_green{
+
+}
+
+.input_small{
+    padding: 10px;
+}

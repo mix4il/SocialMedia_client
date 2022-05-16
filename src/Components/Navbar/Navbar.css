@@ -1,0 +1,34 @@
+.navbar-container{
+    flex:2;
+
+}
+
+.navbar-wrapper{
+    padding: 25px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+.navbar-list{
+    list-style: none;
+    font-size: 20px;
+    color: #A0A0A0;
+}
+
+.navbar-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+.navbar-item_active{
+    color: #4AC047;
+}

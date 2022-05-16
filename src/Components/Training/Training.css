@@ -1,0 +1,54 @@
+.training{
+    display: flex;
+
+    width: 100%;
+    background: #ffffff;
+    padding: 25px 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.training-title{
+    text-align: center;
+}
+
+.training-img{
+    width: 25%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.training-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.training-info{
+    flex: 0 1 75%;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.training-link{
+    padding: 5px 10px;
+    background: rgba(48, 192, 35, 0.6);
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+
+.last-row{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}

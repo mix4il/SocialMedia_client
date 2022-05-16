@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background: #DEF7CB;
+}
+
+.container-app{
+    margin: 0;
+    width: 1400px;
+}
+
+.container-content{
+    display: flex;
+    padding-top: 50px;
+}

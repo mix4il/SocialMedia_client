@@ -1,0 +1,8 @@
+.feed-container{
+    flex: 5;
+    padding: 0 40px;
+}
+
+.title-error{
+    text-align: center;
+}

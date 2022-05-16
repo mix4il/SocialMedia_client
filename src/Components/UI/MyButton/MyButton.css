@@ -1,0 +1,18 @@
+.btn{
+    padding: 5px 15px;
+    background-color: #30C023;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-red{
+    background-color: #F83030;
+    color:#FFFFFF;
+}
