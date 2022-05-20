@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     background: #DEF7CB;
+    min-height: 100vh;
+    height: 100%;
 }
 
 .container-app{

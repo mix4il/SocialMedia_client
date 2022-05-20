@@ -1,5 +1,75 @@
 .training-page{
     flex: 7;
     height: 300px;
-    background: #000;
+}
+
+.training-wrapper {
+    display: flex;
+}
+
+.training-leftbar {
+    flex:3;
+    margin: 0 30px;
+}
+
+.training-page-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.training-creator-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+
+    margin-top: 30px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.creator-avatar {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.creator-name {
+    color: #1EAD1B;
+    font-weight: 600;
+}
+
+.training-rightbar {
+    flex: 8;
+}
+
+.training-page-info {
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.title-wrapper {
+    text-align: center;
+    padding: 15px;
+}
+
+.training-page-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.info-text{
+
+}
+
+.info-wrapper {
+    padding: 20px 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

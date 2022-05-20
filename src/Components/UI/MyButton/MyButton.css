@@ -12,6 +12,10 @@
     color: #000000;
 }
 
+.btn:disabled{
+    cursor: not-allowed;
+}
+
 .btn-red{
     background-color: #F83030;
     color:#FFFFFF;

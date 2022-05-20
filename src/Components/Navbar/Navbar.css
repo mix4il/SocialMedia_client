@@ -22,6 +22,8 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    text-decoration: none;
+    color: #797676;;
 }
 
 .navbar-item:not(:last-child){
@@ -31,4 +33,9 @@
 
 .navbar-item_active{
     color: #4AC047;
+}
+
+.active{
+    text-decoration: none;
+    color: #30C023;
 }

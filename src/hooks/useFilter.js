@@ -4,7 +4,7 @@ import {useMemo} from "react";
 export const useFilterCategory = (trainings, filtersCategory) => {
     return useMemo(()=>{
         if(filtersCategory.length > 0 ){
-            return trainings.filter(item => filtersCategory.includes(item.category));
+            return trainings.filter(item => filtersCategory.includes(item.sport));
         }
         return trainings;
     }, [trainings, filtersCategory])

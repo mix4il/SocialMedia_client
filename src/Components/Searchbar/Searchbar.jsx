@@ -37,7 +37,7 @@ const Searchbar = ({filter, setFilter}) => {
                     <CheckboxList
                         filter={filter}
                         setFilter={setFilter}
-                        items={['хоккей', 'футбол', 'волейбол']}
+                        items={['Хоккей', 'Футбол', 'Волейбол']}
                         filterName={'category'}
                     />
                 </CategoryFilter>
@@ -49,7 +49,7 @@ const Searchbar = ({filter, setFilter}) => {
                     <CheckboxList
                         filter={filter}
                         setFilter={setFilter}
-                        items={['начинающие', 'полупрофессиональный', 'профессиональный']}
+                        items={['Начальный', 'Полупрофессиональный', 'Профессиональный']}
                         filterName={'level'}
                     />
                 </CategoryFilter>
