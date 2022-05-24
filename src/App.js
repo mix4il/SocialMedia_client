@@ -8,10 +8,13 @@ import TrainingPage from "./Pages/TrainingPage/TrainingPage";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import {AuthContext} from "./context/AuthContext";
+import Profile from "./Pages/Profile/Profile";
+import Messenger from "./Pages/Messenger/Messenger";
 
 const App = () => {
 
     const {user} = useContext(AuthContext);
+    console.log(user);
 
   return (
       <>
@@ -25,7 +28,10 @@ const App = () => {
                               <Routes>
                                   <Route path="/" element={<Home/>}/>
                                   <Route path="/home" element={<Home/>}/>
-                                  <Route path="/training/:id" element={<TrainingPage/>}/>
+                                  <Route path="/training/:trainingId" element={<TrainingPage/>}/>
+                                  <Route path="/users/:userId" element={<Profile/>}/>
+                                  <Route path="/messenger" element={<Messenger/>}/>
+                                  <Route path="*" element={<Home/>}/>
                               </Routes>
                           </div>
                       </div>

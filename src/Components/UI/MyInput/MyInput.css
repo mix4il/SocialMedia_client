@@ -14,6 +14,12 @@
     border-radius: 15px;
 }
 
+.input_err{
+    border: 1px solid #fa0112;
+    background: #fcc4c4;
+    
+}
+
 .input_small{
     padding: 10px;
 }

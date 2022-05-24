@@ -9,3 +9,95 @@ export const loginSystem = async (user, dispatch) => {
         dispatch({type: "LOGIN_ERROR", payload: err});
     }
 }
+
+
+
+export const registerSystem = async (user)=>{
+    try{
+        const res = await axios.post('http://localhost:8000/auth/register', user);
+    }catch (e){
+        console.log(e.message);
+    }
+}
+
+export const getTrainingPage = async (trainingId) =>{
+    try{
+        return await axios.get(`http://localhost:8000/training/${trainingId}`);
+    }catch (e){
+        console.log(e.message);
+    }
+}
+
+export const getUser = async (userId) => {
+    try {
+        return await axios.get(`http://localhost:8000/users/${userId}`)
+    } catch (e) {
+        console.log(e.message);
+    }
+}
+
+export const getTrainingsEntry = async (userId) => {
+    try {
+        return await axios.get(`http://localhost:8000/users/${userId}/trainings`)
+    } catch (e) {
+        console.log(e.message);
+    }
+}
+
+
+
+export const getTrainingsCreator = async (userId) => {
+    try {
+        return await axios.get(`http://localhost:8000/training/${userId}/userCreator`);
+    } catch (e) {
+        console.log(e.message);
+    }
+}
+
+//создание тренировки
+
+export const createTraining = async (training) => {
+    try{
+        const res = await axios.post('http://localhost:8000/training/', training);
+    }catch (e){
+        console.log(e.message);
+    }
+}
+
+export const postTrainingsEntry = async (userId, trainingId) => {
+    try {
+        return await axios.post(`http://localhost:8000/training/${trainingId}/entry`, {
+            userId: userId
+        })
+    } catch (e) {
+        console.log(e.message);
+    }
+}
+
+//Отменить запись на тренировку
+export const cancelEntryTraining = async (userId, trainingId, dispatch) => {
+    try {
+        const res = await axios.post(`http://localhost:8000/training/${trainingId}/cancelEntry`, {
+            userId : userId
+        });
+        dispatch({type: "TRAINING_CANCEL", payload: trainingId});
+    } catch (e) {
+        console.log(e.message);
+    }
+}
+
+//запись на тренировку
+export const postEntryTraining = async (userId, trainingId, dispatch) => {
+    try {
+        const res = await axios.post(`http://localhost:8000/training/${trainingId}/entry`, {
+            userId : userId
+        });
+        dispatch({type: "TRAINING_ENTRY", payload: trainingId});
+    } catch (e) {
+        console.log(e.message);
+    }
+}
+
+
+
+

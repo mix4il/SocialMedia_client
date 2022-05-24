@@ -1,17 +1,19 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Navbar.css'
 import {MdAssignment, MdHome, MdMessage} from "react-icons/md";
 import {FaUserFriends} from "react-icons/fa";
 import {Link, NavLink} from "react-router-dom";
+import {AuthContext} from "../../context/AuthContext";
 
 const Navbar = () => {
 
+    const {user} = useContext(AuthContext);
 
     return (
         <div className="navbar-container">
             <div className="navbar-wrapper">
                 <ul className="navbar-list">
-                    <NavLink to={'/profile'} className={"navbar-item"}>
+                    <NavLink to={`/users/${user._id}`} className={"navbar-item"}>
                         <MdHome size={25}/>
                         <span>Личный кабинет</span>
                     </NavLink>
@@ -19,7 +21,7 @@ const Navbar = () => {
                         <MdAssignment size={25}/>
                         <span>Запись на тренировку</span>
                     </NavLink>
-                    <NavLink to={'/messages'} className={"navbar-item"}>
+                    <NavLink to={'/messager'} className={"navbar-item"}>
                         <MdMessage size={25}/>
                         <span>Сообщения</span>
                     </NavLink>

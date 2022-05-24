@@ -1,5 +1,3 @@
-
-
 export const AuthReducer = (state, action) =>{
     switch (action.type){
         case "LOGIN_START": {
@@ -21,6 +19,24 @@ export const AuthReducer = (state, action) =>{
                 user: null,
                 isFetching: false,
                 isError: true,
+            }
+        }
+        case "TRAINING_ENTRY":{
+            return {
+                ...state,
+                user : {
+                    ...state.user,
+                    trainings : [...state.user.trainings, action.payload]
+                }
+            }
+        }
+        case "TRAINING_CANCEL":{
+            return {
+                ...state,
+                user : {
+                    ...state.user,
+                    trainings : state.user.trainings.filter(training => training !== action.payload)
+                }
             }
         }
     }

@@ -8,16 +8,7 @@ const Home = () => {
     const [filter, setFilter] = useState({category: [], level: [], minPrice: 0, maxPrice: 0,search: ''});
 
 
-    const [trainings, setTrainings] = useState([
-        {id:1, title : 'Тренировка по футболу', price : 300, category: 'хоккей', level:'начинающие',
-            address: "Николаевский просп., 4, Самарская обл., Россия, 443085"},
-        {id:2, title : 'Тренировка по футболу', price : 300, category: 'футбол', level:'начинающие',
-            address: "Николаевский просп., 4, Самарская обл., Россия, 443085"},
-        {id:3, title : 'Тренировка по футболу', price : 300, category: 'хоккей', level:'профессиональный',
-            address: "Николаевский просп., 4, Самарская обл., Россия, 443085"},
-        {id:4, title : 'Тренировка по футболу', price : 300, category: 'хоккей', level:'начинающие',
-            address: "Николаевский просп., 4, Самарская обл., Россия, 443085"},
-    ]);
+    const [trainings, setTrainings] = useState([]);
 
 
     useEffect( ()=>{

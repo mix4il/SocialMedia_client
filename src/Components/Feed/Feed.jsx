@@ -7,11 +7,11 @@ const Feed = ({trainings}) => {
     return (
         <div className="feed-container">
             {
-                trainings.length > 0
+                trainings.length
                     ?
                     <div>
                         {trainings.map(training => {
-                        return <Training key={training.id} training={training}/>
+                        return <Training key={training._id} training={training}/>
                     })}
                     </div>
                     :

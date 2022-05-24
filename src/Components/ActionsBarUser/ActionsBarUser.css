@@ -1,0 +1,13 @@
+.actionBarUser{
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.actionBarUser-wrapper{
+    padding: 25px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 30px;
+
+}

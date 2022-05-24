@@ -1,0 +1,13 @@
+.actionBarAdmin{
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.actionBarAdmin-wrapper{
+    padding: 25px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 30px;
+
+}

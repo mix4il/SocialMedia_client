@@ -12,3 +12,15 @@ export const loginError = (error) => ({
     type: "LOGIN_ERROR",
     payload: error,
 });
+export const trainingCancel = (trainingId) => ({
+    type: "TRAINING_CANCEL",
+    payload: trainingId,
+});
+
+export const trainingEntry = (trainingId) => ({
+    type: "TRAINING_ENTRY",
+    payload: trainingId,
+});
+
+
+

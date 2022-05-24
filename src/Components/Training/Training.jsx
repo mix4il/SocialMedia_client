@@ -7,7 +7,7 @@ const Training = ({training}) => {
     console.log(PF + "image-1.png");
     return (
         <div className="training">
-            <img className="training-img"  src={PF+ "image-1.png"} alt="Изображение тренировки"/>
+            <img className="training-img"  src={training.img ?  PF+ training.img : PF + "image-1.png"} alt="Изображение тренировки"/>
             <div className="training-info">
                 <h2 className="training-title">{training.title}</h2>
                 <h3 className="training-text">Уровень подготовки спортсменов: {training.level}</h3>
@@ -20,7 +20,7 @@ const Training = ({training}) => {
                 </div>
                 <div className="last-row">
                     <h3 className="training-text">Цена: {training.price}</h3>
-                    <Link to="/" className="training-link">Записаться</Link>
+                    <Link to={`/training/${training._id}`} className="training-link">Записаться</Link>
                 </div>
             </div>
         </div>

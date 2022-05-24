@@ -1,7 +1,7 @@
 import React from 'react';
 import './MyInput.css'
 
-const MyInput = ({kind, ...props}) => {
+const MyInput = React.forwardRef(({kind, error,  ...props}, ref) => {
     let clazz = 'input ';
 
     if(kind === 'small'){
@@ -12,9 +12,13 @@ const MyInput = ({kind, ...props}) => {
         clazz+= 'input_green ';
     }
 
+    if(error){
+        clazz+= 'input_err ';
+    }
+
     return (
-            <input className={clazz} {...props}/>
+        <input ref={ref} className={clazz} {...props}/>
     );
-};
+});
 
 export default MyInput;

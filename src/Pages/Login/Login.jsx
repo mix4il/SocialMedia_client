@@ -30,8 +30,6 @@ const Login = () => {
         await loginSystem({email, password}, dispatch);
     }
 
-
-
     return (
         <div className="login">
             <form onSubmit={handleClick} className="login-wrapper">

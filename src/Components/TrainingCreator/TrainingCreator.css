@@ -1,0 +1,35 @@
+.trainingsCreator-entry-wrapper {
+    margin-top: 25px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+
+.trainingsCreator-titleName {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.trainingsCreator-item {
+    width: 100%;
+    background: #F8F3F3;
+    padding: 10px;
+    border-bottom: black 1px solid;
+}
+
+.trainingsCreator-item-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.trainingsCreator-item-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
