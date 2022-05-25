@@ -99,5 +99,40 @@ export const postEntryTraining = async (userId, trainingId, dispatch) => {
 }
 
 
+//РАБОТА С ЧАТОМ
+
+export const getAllConversation = async (userId) => {
+    try {
+        return await axios.get('http://localhost:8000/conversation/' + userId);
+    } catch (e) {
+        console.log(e.message());
+    }
+}
+
+export const getConversation = async (senderId, receiverId) =>{
+    try {
+        return await axios.get(`http://localhost:8000/conversation/find/${senderId}/${receiverId}`);
+    } catch (e) {
+        console.log(e.message());
+    }
+}
+
+export const getMessages = async (conversationId) =>{
+    try {
+        return await axios.get(`http://localhost:8000/message/` + conversationId);
+    } catch (e) {
+        console.log(e.message());
+    }
+}
+
+
+export const postMessage = async (message) =>{
+    try {
+        return await axios.post(`http://localhost:8000/message/`, message);
+    } catch (e) {
+        console.log(e.message());
+    }
+}
+
 
 

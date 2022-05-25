@@ -1,0 +1,24 @@
+.messenger{
+    flex: 8;
+    margin-left: 20px;
+}
+
+.messenger-wrapper{
+    display: flex;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    height: calc(100vh - 200px);
+}
+
+.select-chat{
+    flex: 8;
+
+    margin-top: 300px;
+
+    text-align: center;
+    font-size: 40px;
+
+
+    color: #757575;
+}

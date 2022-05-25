@@ -9,7 +9,7 @@ import {useForm} from "react-hook-form";
 
 import {registerSystem} from "../../API/ServicesAPI";
 import {schemaRegister} from "./validation";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 
 const Register = () => {
@@ -67,7 +67,7 @@ const Register = () => {
                 <div className="last-row-register">
                     <div>
                         <span>Есть аккаунт? </span>
-                        <a href="#" className="auth">Авторизация</a>
+                        <Link to="/login" className="registration">Авторизация</Link>
                     </div>
                     <MyButton disabled={!isValid}>Зарегистрироваться</MyButton>
                 </div>

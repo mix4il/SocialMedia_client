@@ -6,6 +6,7 @@ import './Login.css'
 import {AuthContext} from "../../context/AuthContext";
 import {loginSystem} from "../../API/ServicesAPI";
 import MyLoader from "../../Components/UI/MyLoader/MyLoader";
+import {Link} from "react-router-dom";
 
 const Login = () => {
 
@@ -43,7 +44,7 @@ const Login = () => {
                 <div className="last-row-login">
                     <div>
                         <span>Нет Аккаунта? </span>
-                        <a href="#" className="registration">Регистрация</a>
+                        <Link to="/register" className="registration">Регистрация</Link>
                     </div>
                     <MyButton disabled={isFetching}>{isFetching ? <MyLoader/> : "Войти"}</MyButton>
                 </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
                         <MdAssignment size={25}/>
                         <span>Запись на тренировку</span>
                     </NavLink>
-                    <NavLink to={'/messager'} className={"navbar-item"}>
+                    <NavLink to={'/messenger'} className={"navbar-item"}>
                         <MdMessage size={25}/>
                         <span>Сообщения</span>
                     </NavLink>

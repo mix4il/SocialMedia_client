@@ -17,7 +17,6 @@ const TrainingCreator = ({userId}) => {
         const fetchTrainingsEntry = async () =>{
             const response = await getTrainingsCreator(userId);
             setTrainingsCreating(response.data);
-            console.log(trainingsCreating);
         }
         fetchTrainingsEntry();
     }, [])

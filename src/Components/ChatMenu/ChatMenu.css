@@ -1,0 +1,11 @@
+.chat-menu{
+    flex: 3;
+}
+
+.chat-header{
+    padding: 30px;
+}
+
+.chat-title{
+    margin-bottom: 10px;
+}
